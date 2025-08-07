@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Restaurante Sabor Brasileiro - Autêntica culinária brasileira com ingredientes frescos e receitas tradicionais">
+    <title>Sabor Brasileiro - Autêntica Culinária Brasileira</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1><i class="fas fa-utensils"></i> Sabor Brasileiro</h1>
+                <p>Autêntica culinária brasileira</p>
+            </div>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#menu">Cardápio</a></li>
+                    <li><a href="#especiais">Especiais</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="#reservas" class="btn-reserva">Reservas</a></li>
+                </ul>
+                <div class="mobile-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Sabores que contam a história do Brasil</h2>
+            <p>Experimente a verdadeira essência da culinária brasileira</p>
+            <a href="#menu" class="btn">Ver Cardápio</a>
+        </div>
+    </section>
+
+    <section id="sobre" class="section sobre">
+        <div class="container">
+            <h2 class="section-title">Sobre Nós</h2>
+            <div class="sobre-content">
+                <div class="sobre-texto">
+                    <p>Fundado em 2010, o Sabor Brasileiro nasceu da paixão por compartilhar a riqueza e diversidade da culinária do nosso país. Nossa missão é levar à sua mesa os sabores autênticos que fazem parte da cultura brasileira, preparados com ingredientes frescos e seguindo receitas tradicionais.</p>
+                    <p>Nossa equipe de chefs viajou por todas as regiões do Brasil para aprender os segredos das cozinhas regionais e trazer para você uma experiência gastronômica única.</p>
+                    <div class="destaques">
+                        <div class="destaque-item">
+                            <i class="fas fa-leaf"></i>
+                            <p>Ingredientes frescos e locais</p>
+                        </div>
+                        <div class="destaque-item">
+                            <i class="fas fa-heart"></i>
+                            <p>Preparo com amor e tradição</p>
+                        </div>
+                        <div class="destaque-item">
+                            <i class="fas fa-award"></i>
+                            <p>Reconhecimento nacional</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sobre-imagem">
+                    <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Chef preparando comida brasileira">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="section menu">
+        <div class="container">
+            <h2 class="section-title">Nosso Cardápio</h2>
+            <p class="section-subtitle">Temos opções para todos os gostos e ocasiões</p>
+            
+            <div class="menu-tabs">
+                <button class="tab-btn active" data-categoria="entradas">Entradas</button>
+                <button class="tab-btn" data-categoria="principais">Pratos Principais</button>
+                <button class="tab-btn" data-categoria="sobremesas">Sobremesas</button>
+                <button class="tab-btn" data-categoria="bebidas">Bebidas</button>
+            </div>
+            
+            <div class="menu-categoria active" id="entradas">
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3>Pão de Queijo</h3>
+                        <p>Deliciosos pães de queijo mineiros, crocantes por fora e macios por dentro.</p>
+                    </div>
+                    <div class="item-preco">R$ 12,00</div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3>Bolinho de Bacalhau</h3>
+                        <p>Bolinhos crocantes com recheio de bacalhau desfiado e batata.</p>
+                    </div>
+                    <div class="item-preco">R$ 18,00</div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3>Pastel de Feira</h3>
+                        <p>Tradicional pastel frito com recheio de carne, queijo ou palmito.</p>
+                    </div>
+                    <div class="item-preco">R$ 10,00</div>
+                </div>
+            </div>
+            
+            <div class="menu-categoria" id="principais">
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3>Feijoada Completa</h3>
+                        <p>O clássico brasileiro com todos os acompanhamentos: arroz, couve, farofa, laranja e torresmo.</p>
+                    </div>
+                    <div class="item-preco">R$ 42,00</div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3>Moqueca Baiana</h3>
+                        <p>Peixe fresco cozido no leite de coco com dendê, pimentões e cebola, servido com arroz e pirão.</p>
+                    </div>
+                    <div class="item-preco">R$ 48,00</div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3>Churrasco Gaúcho</h3>
+                        <p>Seleção de carnes nobres assadas na brasa, acompanhadas de arroz, farofa, pão de alho e vinagrete.</p>
+                    </div>
+                    <div class="item-preco">R$ 55,00</div>
+                </div>
+            </div>
+            
+            <div class="menu-categoria" id="sobremesas">
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3>Brigadeiro Gourmet</h3>
+                        <p>O tradicional doce brasileiro em versão premium com chocolate 70% cacau.</p>
+                    </div>
+                    <div class="item-preco">R$ 8,00</div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3>Pudim de Leite</h3>
+                        <p>O clássico pudim brasileiro com calda de caramelo.</p>
+                    </div>
+                    <div class="item-preco">R$ 12,00</div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3>Mousse de Maracujá</h3>
+                        <p>Mousse cremosa e refrescante com fruta fresca.</p>
+                    </div>
+                    <div class="item-preco">R$ 10,00</div>
+                </div>
+            </div>
+            
+            <div class="menu-categoria" id="bebidas">
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3>Caipirinha</h3>
+                        <p>A bebida brasileira mais famosa, feita com cachaça, limão, açúcar e gelo.</p>
+                    </div>
+                    <div class="item-preco">R$ 18,00</div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3>Sucos Naturais</h3>
+                        <p>Opções: maracujá, caju, goiaba, manga e abacaxi com hortelã.</p>
+                    </div>
+                    <div class="item-preco">R$ 10,00</div>
+                </div>
+                <div class="menu-item">
+                    <div class="item-info">
+                        <h3>Água de Coco</h3>
+                        <p>Coco verde fresco direto da Bahia.</p>
+                    </div>
+                    <div class="item-preco">R$ 8,00</div>
+                </div>
+            </div>
+            
+            <div class="menu-destaque">
+                <p>Todo sábado temos Feijoada Completa com rodízio de acompanhamentos por R$ 59,90!</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="especiais" class="section especiais">
+        <div class="container">
+            <h2 class="section-title">Nossos Especiais</h2>
+            <p class="section-subtitle">Pratos que celebram a diversidade brasileira</p>
+            
+            <div class="especiais-grid">
+                <div class="especial-card">
+                    <img src="https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Prato Especial 1">
+                    <h3>Virado à Paulista</h3>
+                    <p>Arroz, feijão, bisteca, ovo, banana frita e couve - o prato tradicional de São Paulo.</p>
+                    <span class="preco">R$ 38,00</span>
+                </div>
+                <div class="especial-card">
+                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Prato Especial 2">
+                    <h3>Bobó de Camarão</h3>
+                    <p>Camarões em creme de mandioca com leite de coco e dendê, servido com arroz branco.</p>
+                    <span class="preco">R$ 45,00</span>
+                </div>
+                <div class="especial-card">
+                    <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Prato Especial 3">
+                    <h3>Acarajé</h3>
+                    <p>Bolinho de feijão-fradinho frito no azeite-de-dendê, recheado com vatapá, caruru e camarão seco.</p>
+                    <span class="preco">R$ 22,00</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="galeria" class="section galeria">
+        <div class="container">
+            <h2 class="section-title">Galeria</h2>
+            <p class="section-subtitle">Conheça nosso ambiente e nossos pratos</p>
+            
+            <div class="galeria-grid">
+                <div class="galeria-item">
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Ambiente do restaurante">
+                </div>
+                <div class="galeria-item">
+                    <img src="https://images.unsplash.com/photo-1559847844-5315695dadae?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Prato Feijoada">
+                </div>
+                <div class="galeria-item">
+                    <img src="https://images.unsplash.com/photo-1565557623262-b51c2513a641?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Prato Moqueca">
+                </div>
+                <div class="galeria-item">
+                    <img src="https://images.unsplash.com/photo-1565958011703-72f858228ff4?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Chefs preparando comida">
+                </div>
+                <div class="galeria-item">
+                    <img src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Café da manhã brasileiro">
+                </div>
+                <div class="galeria-item">
+                    <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Sobremesas brasileiras">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="section contato">
+        <div class="container">
+            <h2 class="section-title">Contato</h2>
+            <div class="contato-content">
+                <div class="contato-info">
+                    <h3>Informações</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Rua das Palmeiras, 123 - Jardins, São Paulo - SP</p>
+                    <p><i class="fas fa-phone"></i> (11) 1234-5678 / (11) 98765-4321</p>
+                    <p><i class="fas fa-envelope"></i> contato@saborbrasileiro.com.br</p>
+                    <p><i class="fas fa-clock"></i> Funcionamento: Terça a Domingo, 11h às 23h</p>
+                    
+                    <div class="redes-sociais">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="contato-form">
+                    <h3>Envie uma mensagem</h3>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Seu nome" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Seu e-mail" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Seu telefone">
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Sua mensagem" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reservas" class="section reservas">
+        <div class="container">
+            <h2 class="section-title">Faça sua reserva</h2>
+            <p class="section-subtitle">Garanta seu lugar em nosso restaurante</p>
+            
+            <form class="reserva-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefone">Telefone</label>
+                        <input type="tel" id="telefone" required>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="data">Data</label>
+                        <input type="date" id="data" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="hora">Hora</label>
+                        <input type="time" id="hora" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="pessoas">Pessoas</label>
+                        <select id="pessoas">
+                            <option value="1">1 pessoa</option>
+                            <option value="2">2 pessoas</option>
+                            <option value="3">3 pessoas</option>
+                            <option value="4">4 pessoas</option>
+                            <option value="5+">5+ pessoas</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="observacoes">Observações</label>
+                    <textarea id="observacoes"></textarea>
+                </div>
+                
+                <button type="submit" class="btn">Reservar Agora</button>
+            </form>
+        </div>
+    </section>
+
+    <div class="mapa">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.0754267452926!2d-46.65342658502226!3d-23.565734367638227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce59c8da0aa315%3A0xd59f9431f2c9776a!2sAv.%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1630000000000!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>Sabor Brasileiro</h3>
+                    <p>Autêntica culinária brasileira com ingredientes frescos e receitas tradicionais.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Links Rápidos</h3>
+                    <ul>
+                        <li><a href="#sobre">Sobre Nós</a></li>
+                        <li><a href="#menu">Cardápio</a></li>
+                        <li><a href="#galeria">Galeria</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Horário de Funcionamento</h3>
+                    <p>Terça a Sexta: 11h - 22h</p>
+                    <p>Sábado: 11h - 23h</p>
+                    <p>Domingo: 11h - 17h</p>
+                    <p>Segunda: Fechado</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Newsletter</h3>
+                    <p>Assine e receba nossas promoções</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Seu e-mail">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Sabor Brasileiro. Todos os direitos reservados.</p>
+                <div class="footer-pagamentos">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-amex"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" class="btn-whatsapp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
